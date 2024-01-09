@@ -1,5 +1,5 @@
 base_path = "/out/"
-fps = 12
+fps = 10
 time_between_frames_ms = 1000/fps
 
 function video()

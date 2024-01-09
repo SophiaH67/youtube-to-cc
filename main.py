@@ -13,7 +13,7 @@ from glob import glob
 from nfp import img_to_nfp
 
 print("Extracting Images...")
-sh.ffmpeg("-i", "tmp/sourceVideo.mkv", "-vf", "fps=12", "tmp/img/img%05d.png")
+sh.ffmpeg("-i", "tmp/sourceVideo.mkv", "-vf", "fps=10", "tmp/img/img%05d.png")
 frame=0
 for img in glob("tmp/img/*.png"):
     im = Image.open(img)
